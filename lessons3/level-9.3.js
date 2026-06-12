@@ -64,7 +64,6 @@ const padding = 40;
 
 ctx.beginPath();
 points.forEach((point, index) => {
-    // Рассчитываем координаты на холсте
     const x = padding + point[0] * scaleX;
     const y = canvas.height - padding - (point[1] * scaleY);
     if (index === 0) {
