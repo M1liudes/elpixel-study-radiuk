@@ -1,1 +1,1 @@
-{"version":3,"file":"ICharacter.d.ts","sourceRoot":"","sources":["../../src/ICharacter.ts"],"names":[],"mappings":""}
+{"version":3,"file":"ICharacter.d.ts","sourceRoot":"","sources":["../../src/ICharacter.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,UAAU;IACvB,IAAI,EAAE,MAAM,CAAC;IACb,MAAM,EAAE,MAAM,CAAC;IACf,KAAK,EAAE,MAAM,CAAC;IACd,UAAU,CAAC,MAAM,EAAE,MAAM,GAAG,IAAI,CAAC;IACjC,IAAI,CAAC,MAAM,EAAE,MAAM,GAAG,IAAI,CAAC;IAC3B,OAAO,IAAI,IAAI,CAAC;CACnB"}
