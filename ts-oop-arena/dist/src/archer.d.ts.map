@@ -1,1 +1,1 @@
-{"version":3,"file":"archer.d.ts","sourceRoot":"","sources":["../../src/archer.ts"],"names":[],"mappings":""}
+{"version":3,"file":"archer.d.ts","sourceRoot":"","sources":["../../src/archer.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,IAAI,EAAE,MAAM,WAAW,CAAC;AAEjC,qBAAa,MAAO,SAAQ,IAAI;IAC5B,SAAS,CAAC,WAAW,EAAE,MAAM,CAAK;gBAErB,IAAI,EAAE,MAAM,EAAE,UAAU,EAAE,MAAM,EAAE,KAAK,GAAE,MAAW,EAAE,KAAK,GAAE,MAAU;IAKpF,IAAW,UAAU,IAIQ,MAAM,CAFlC;IAED,IAAW,UAAU,CAAC,KAAK,EAAE,MAAM,EAElC;IAEM,KAAK,IAAI,IAAI;IAab,OAAO,CAAC,MAAM,EAAE,MAAM,GAAG,IAAI;CAIvC"}

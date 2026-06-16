@@ -1,1 +1,1 @@
-{"version":3,"file":"warrior.d.ts","sourceRoot":"","sources":["../../src/warrior.ts"],"names":[],"mappings":""}
+{"version":3,"file":"warrior.d.ts","sourceRoot":"","sources":["../../src/warrior.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,IAAI,EAAE,MAAM,WAAW,CAAC;AAEjC,qBAAa,OAAQ,SAAQ,IAAI;IAC7B,SAAS,CAAC,MAAM,EAAE,MAAM,CAAK;gBAEhB,IAAI,EAAE,MAAM,EAAE,KAAK,EAAE,MAAM,EAAE,KAAK,GAAE,MAAY,EAAE,KAAK,GAAE,MAAU;IAKhF,IAAW,KAAK,IAIQ,MAAM,CAF7B;IAED,IAAW,KAAK,CAAC,KAAK,EAAE,MAAM,EAE7B;IAEM,UAAU,CAAC,MAAM,EAAE,MAAM,GAAG,IAAI;CAQ1C"}

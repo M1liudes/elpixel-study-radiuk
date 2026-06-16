@@ -1,13 +1,15 @@
-import type { ICharacter } from './ICharacter.js';
+import { ICharacter } from './ICharacter.js';
 
-abstract class Hero implements ICharacter {
+export abstract class Hero implements ICharacter {
     protected _name: string = '';
-    protected _health: number = 0;
+    protected _maxHealth: number;
+    public health: number;
     public level: number;
 
-    constructor(name: string, health: number = 100, level: number = 1) {
+    constructor(name: string, health: number, level: number) {
         this.name = name;
         this.health = health;
+        this._maxHealth = health;
         this.level = level;
     }
 
@@ -15,31 +17,15 @@ abstract class Hero implements ICharacter {
         return this._name;
     }
 
-    public get health(): number {
-        return this._health;
-    }
-
     public set name(value: string) {
         this._name = value;
-    }
-
-    public set health(value: number) {
-        if (value > 100) {
-            this._health = 100;
-        } else {
-            if (value < 0) {
-                this._health = 0;
-            } else {
-                this._health = value;
-            }
-        }
     }
 
     public takeDamage(amount: number): void {
         this.health -= amount;
         if (this.health <= 0) {
             this.health = 0;
-            console.log(`Герой: ${this.name} \nОтправляеться на базу!`);
+            console.log(`Герой: ${this.name}\nОтправляеться на базу!`);
         } else {
             console.log(`Герой: ${this.name}\nПолучено урона: ${amount} хп; \nЗдоровье: ${this.health} хп.`);
         }
@@ -47,17 +33,17 @@ abstract class Hero implements ICharacter {
 
     public heal(amount: number): void {
         this.health += amount;
-        if (this.health >= 100) {
-            this.health = 100;
-            console.log(`Герой: ${this.name} \nЗдоровье: ${this.health} фулл хп!`);
+        if (this.health >= this._maxHealth) {
+            this.health = this._maxHealth;
+            console.log(`Герой: ${this.name}\nЗдоровье: ${this._maxHealth} фулл хп!`);
         } else {
-            console.log(`Герой: ${this.name}\n Исцелил: ${amount} хп; \nЗдоровье: ${this.health} хп.`);
+            console.log(`Герой: ${this.name}\nИсцелил: ${amount} хп; \nЗдоровье: ${this.health} хп.`);
         }
     }
 
     public levelUp(): void {
         this.level += 1;
-        this.health = 100;
-        console.log(`Герой: ${this.name}\n Повысил уровень: ${this.level}, здоровье востановилось; \nЗдоровье: ${this.health} хп.`);
+        this.health = this._maxHealth;
+        console.log(`Герой: ${this.name}\nПовысил уровень: ${this.level}, здоровье востановилось; \nЗдоровье: ${this.health} хп.`);
     }
 }

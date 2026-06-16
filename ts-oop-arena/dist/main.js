@@ -1,3 +1,25 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+import { Mage } from './src/mage.js';
+import { Warrior } from './src/warrior.js';
+import { Archer } from './src/archer.js';
+const Rise = new Mage('Райз', 150);
+const Orn = new Warrior('Орн', 20);
+const Esh = new Archer('Эш', 15);
+console.group('Райз');
+Rise.takeDamage(20);
+Rise.takeDamage(10);
+Rise.heal(10);
+Rise.castSpell(150, 'Перегрузка');
+Rise.castSpell(10, 'Искривление пространства');
+Rise.levelUp();
+Rise.castSpell(80, 'Искривление пространства');
+Rise.takeDamage(20);
+console.groupEnd();
+console.group('Орн');
+Orn.takeDamage(30);
+Orn.takeDamage(10);
+console.groupEnd();
+console.group('Эш');
+Esh.shoot();
+Esh.restock(1);
+console.groupEnd();
 //# sourceMappingURL=main.js.map

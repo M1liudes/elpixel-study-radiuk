@@ -1,1 +1,1 @@
-{"version":3,"file":"mage.d.ts","sourceRoot":"","sources":["../../src/mage.ts"],"names":[],"mappings":""}
+{"version":3,"file":"mage.d.ts","sourceRoot":"","sources":["../../src/mage.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,IAAI,EAAE,MAAM,WAAW,CAAC;AAEjC,qBAAa,IAAK,SAAQ,IAAI;IACnB,IAAI,EAAE,MAAM,CAAC;IACpB,SAAS,CAAC,QAAQ,EAAE,MAAM,CAAK;gBAElB,IAAI,EAAE,MAAM,EAAE,OAAO,EAAE,MAAM,EAAE,MAAM,GAAE,MAAW,EAAE,KAAK,GAAE,MAAU;IAMlF,IAAW,OAAO,IAIQ,MAAM,CAF/B;IAED,IAAW,OAAO,CAAC,KAAK,EAAE,MAAM,EAE/B;IAEM,SAAS,CAAC,IAAI,EAAE,MAAM,EAAE,SAAS,EAAE,MAAM,GAAG,IAAI;IAavC,OAAO,IAAI,IAAI;CAKlC"}
